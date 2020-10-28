@@ -5,6 +5,7 @@ import { ColorSchemeName } from 'react-native';
 
 import NotFoundScreen from '../screens/NotFoundScreen';
 import { RootStackParamList } from '../types';
+import BottomTabNavigator from './BottomTabNavigator';
 import LinkingConfiguration from './LinkingConfiguration';
 import WorkoutList from '../screens/WorkoutList';
 import 'react-native-gesture-handler';

@@ -9,6 +9,7 @@ import {
 } from "react-native";
 import Timer from '../timer/CountdownTimer';
 
+const workoutTitle = `Start Workout`;
 
 export default function SelectWorkout(props) {
   // Modal should open for countdown timer.
@@ -26,7 +27,7 @@ export default function SelectWorkout(props) {
       >
         <View style={styles.centeredView}>
           <View style={styles.modalView}>
-            <Text style={styles.modalText}>Start Workout</Text>
+            <Text style={styles.modalText}>{workoutTitle}</Text>
             <Timer path="/screens/TabOneScreen.tsx" />
             <TouchableHighlight
               style={{ ...styles.openButton, backgroundColor: "#2196F3" }}
@@ -36,7 +37,7 @@ export default function SelectWorkout(props) {
             >
               <Text style={styles.textStyle}>Hide Modal</Text>
             </TouchableHighlight>
-
+            
           </View>
         </View>
       </Modal>
@@ -88,3 +89,4 @@ const styles = StyleSheet.create({
       textAlign: "center"
     }
   });
+  

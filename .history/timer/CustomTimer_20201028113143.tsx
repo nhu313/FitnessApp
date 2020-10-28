@@ -22,7 +22,7 @@ export default function Count({ path }: { path: string }) {
         <Text>yo!!!</Text>
 
         <CountDown
-          until={100}
+          until={600}
           onFinish={this.onDoneCountdown}
           onPress={this.onPressCountdown}
           size={20}
