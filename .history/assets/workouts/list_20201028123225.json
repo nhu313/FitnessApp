@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Back",
+    "duration": 600,
+    "file_name": "back.json"
+  },
+  {
+    "name": "Core",
+    "duration": 600,
+    "file_name": "core.json"
+  }
+]

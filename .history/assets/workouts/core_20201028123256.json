@@ -1,0 +1,14 @@
+{
+  "title": "Back",
+  "duration": 600,
+  "exercises": [
+    {
+      "name": "Plank",
+      "duration": 60
+    },
+    {
+      "name": "Bicycle",
+      "duration": 60
+    }
+  ]
+}

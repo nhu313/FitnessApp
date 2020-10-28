@@ -4,12 +4,14 @@ import { StyleSheet, View, Text, Platform, Alert } from 'react-native';
 
 
 export default function WorkoutList() {
-  const exercises = require('./../assets/workouts/list.json');
+  const customData = require('./../assets/workouts/back.json');
+  console.log(customData);
+  console.log(customData.title)
 
 
     return (
       <View style={styles.MainContainer}>
-        <Text>{customData['title']}</Text>
+        <Text>{{customData.title}}</Text>
 
       </View>
     );
