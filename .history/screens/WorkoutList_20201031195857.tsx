@@ -9,8 +9,11 @@ export default function WorkoutList() {
 
     return (
       <View style={styles.MainContainer}>
-        <Text>{customData['title']}</Text>
-
+        {exercises.map(exercise => (
+          <Text key={exercise.name} style={styles.ExerciseItem}>
+            {exercise.name}
+          </Text>
+        ))}
       </View>
     );
 }
@@ -20,6 +23,18 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    flexDirection: 'row'
+  },
+  ExerciseItem: {
+    fontSize: 40,
+    borderRadius: 250,
+    backgroundColor: '#00b4eb',
+    color: '#FFFFFF',
+    width: 250,
+    height: 250,
+    textAlign: 'center',
+    alignItems: 'center',
+
   }
 
 });
